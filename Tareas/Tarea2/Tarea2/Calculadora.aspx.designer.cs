@@ -177,13 +177,13 @@ namespace Tarea2
         protected global::System.Web.UI.WebControls.Button btn9;
 
         /// <summary>
-        /// Control ImageButton1.
+        /// Control btnSqrt.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton ImageButton1;
+        protected global::System.Web.UI.WebControls.ImageButton btnSqrt;
 
         /// <summary>
         /// Control btn0.
