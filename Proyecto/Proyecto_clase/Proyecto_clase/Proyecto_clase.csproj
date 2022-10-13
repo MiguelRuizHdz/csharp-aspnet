@@ -67,6 +67,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Imagenes\calendario.png" />
+    <Content Include="Imagenes\save.png" />
+    <Content Include="Imagenes\search.png" />
     <Content Include="Presentacion\Alumnos.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>

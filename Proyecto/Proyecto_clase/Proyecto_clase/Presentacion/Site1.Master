@@ -8,16 +8,21 @@
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 159px;
+        }
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
         <div>
             <table>
                 <tr>
-                    <td colspan="2">Facultad de Ingeniería Mécanica y Eléctrica</td>
+                    <td colspan="2" style="font-size: xx-large; background-color: #008000; align-content: center; text-align: center;">FACULTAD DE INGENIERÍA MÉCANICA Y ELÉCTRICA</td>
                 </tr>
                 <tr>
-                    <td>
+                    <td class="auto-style1">
                         <asp:Menu ID="Menu1" runat="server">
                             <Items>
                                 <asp:MenuItem NavigateUrl="~/Presentacion/Alumnos.aspx" Text="Alumnos" Value="Alumnos"></asp:MenuItem>
