@@ -67,6 +67,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Ajax\ConAjax.aspx" />
+    <Content Include="Ajax\SinAjax.aspx" />
     <Content Include="Imagenes\calendario.png" />
     <Content Include="Imagenes\clear.png" />
     <Content Include="Imagenes\delete.png" />
@@ -77,6 +79,20 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ajax\ConAjax.aspx.cs">
+      <DependentUpon>ConAjax.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ajax\ConAjax.aspx.designer.cs">
+      <DependentUpon>ConAjax.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ajax\SinAjax.aspx.cs">
+      <DependentUpon>SinAjax.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ajax\SinAjax.aspx.designer.cs">
+      <DependentUpon>SinAjax.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Datos\dAlumno.cs" />
     <Compile Include="Entidades\eAlumno.cs" />
     <Compile Include="Negocio\nAlumno.cs" />
