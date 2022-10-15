@@ -74,9 +74,9 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Datos\eDatos.cs" />
+    <Compile Include="Datos\dAlumno.cs" />
     <Compile Include="Entidades\eAlumno.cs" />
-    <Compile Include="Negocio\eNegocio.cs" />
+    <Compile Include="Negocio\nAlumno.cs" />
     <Compile Include="Presentacion\Site1.Master.cs">
       <DependentUpon>Site1.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
