@@ -181,6 +181,10 @@ namespace Proyecto_clase.Datos
             param08.Value = alumno.CURP;
             param08.ParameterName = "CURP";
             parametros.Add(param08);
+            DbParameter param09 = dpf.CreateParameter();
+            param09.Value = alumno.Estatus;
+            param09.ParameterName = "Estatus";
+            parametros.Add(param09);
             try
             {
                 return ejecutaNonQuery("AlumnoAgrega", parametros);
@@ -207,5 +211,68 @@ namespace Proyecto_clase.Datos
             return ejecutaDataReader("AlumnoConsultaXMatricula", parametros);
         }
 
+        public int AlumnoModifica(eAlumno alumno)
+        {
+            List<DbParameter> parametros = new List<DbParameter>();
+            DbParameter param01 = dpf.CreateParameter();
+            param01.Value = alumno.Matricula;
+            param01.ParameterName = "Matricula";
+            parametros.Add(param01);
+            DbParameter param02 = dpf.CreateParameter();
+            param02.Value = alumno.Nombre;
+            param02.ParameterName = "Nombre";
+            parametros.Add(param02);
+            DbParameter param03 = dpf.CreateParameter();
+            param03.Value = alumno.Direccion;
+            param03.ParameterName = "Direccion";
+            parametros.Add(param03);
+            DbParameter param04 = dpf.CreateParameter();
+            param04.Value = alumno.GeneroId;
+            param04.ParameterName = "GeneroId";
+            parametros.Add(param04);
+            DbParameter param05 = dpf.CreateParameter();
+            param05.Value = alumno.Telefono;
+            param05.ParameterName = "Telefono";
+            parametros.Add(param05);
+            DbParameter param06 = dpf.CreateParameter();
+            param06.Value = alumno.Correo;
+            param06.ParameterName = "Correo";
+            parametros.Add(param06);
+            DbParameter param07 = dpf.CreateParameter();
+            param07.Value = alumno.FechaNacimiento;
+            param07.ParameterName = "FechaNacimiento";
+            parametros.Add(param07);
+            DbParameter param08 = dpf.CreateParameter();
+            param08.Value = alumno.CURP;
+            param08.ParameterName = "Curp";
+            parametros.Add(param08);
+            DbParameter param09 = dpf.CreateParameter();
+            param09.Value = alumno.Estatus;
+            param09.ParameterName = "Estatus";
+            parametros.Add(param09);
+            // Ejecuta y regresa el valor del NonQuery
+            try
+            {
+                return ejecutaNonQuery("AlumnoModifica", parametros);
+            }
+            catch { return 0; }
+        }
+
+        public int AlumnoBorra(int matricula)
+        {
+            // Lista que contendra los valores a agragr al SP
+            List<DbParameter> parametros = new List<DbParameter>();
+
+            DbParameter param01 = dpf.CreateParameter();
+            param01.Value = matricula;
+            param01.ParameterName = "Matricula";
+            parametros.Add(param01);
+
+            try
+            {
+                return ejecutaNonQuery("AlumnoElimina", parametros);
+            }
+            catch { return 0; }
+        }
     }
 }

@@ -68,6 +68,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Imagenes\calendario.png" />
+    <Content Include="Imagenes\clear.png" />
+    <Content Include="Imagenes\delete.png" />
+    <Content Include="Imagenes\edit.png" />
     <Content Include="Imagenes\save.png" />
     <Content Include="Imagenes\search.png" />
     <Content Include="Presentacion\Alumnos.aspx" />

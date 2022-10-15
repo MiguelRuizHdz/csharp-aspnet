@@ -10,16 +10,16 @@ namespace Proyecto_clase.Entidades
         public eAlumno()
         { }
 
-        public int AlumnoId { get => AlumnoId; set => _AlumnoId = value; } 
+        public int AlumnoId { get => _AlumnoId; set => _AlumnoId = value; } 
         public int Matricula { get => _Matricula; set => _Matricula = value; } 
         public string Nombre { get => _Nombre; set => _Nombre = value; } 
         public string Direccion { get => _Direccion; set => _Direccion = value; } 
         public string GeneroId { get => _GeneroId; set => _GeneroId = value; } 
-        public string Telefono { get => Telefono; set => _Telefono = value; } 
+        public string Telefono { get => _Telefono; set => _Telefono = value; } 
         public string Correo { get => _Correo; set => _Correo = value; } 
         public string CURP { get => _CURP; set => _CURP = value; } 
-        public DateTime FechaNacimiento { get => FechaNacimiento; set => FechaNacimiento = value; } 
-        public DateTime FechaNacimiento1 { get => FechaNacimiento1; set => FechaNacimiento1 = value; } 
+        public DateTime FechaNacimiento { get => _FechaNacimiento; set => _FechaNacimiento = value; } 
+        //public DateTime FechaNacimiento1 { get => _FechaNacimiento1; set => _FechaNacimiento1 = value; } 
         public string Estatus { get => _Estatus; set => _Estatus = value; } 
         private int _AlumnoId;
         private int _Matricula;

@@ -27,6 +27,16 @@ namespace Proyecto_clase.Negocio
             return datos.AlumnoConsultaXMat(matricula);
         }
 
+        public int AlumnoBorra(int matricula)
+        {
+            return datos.AlumnoBorra(matricula);
+        }
+
+        public int AlumnoModifica(eAlumno alumno)
+        {
+            return datos.AlumnoModifica(alumno);
+        }
+
 
     }
 }
