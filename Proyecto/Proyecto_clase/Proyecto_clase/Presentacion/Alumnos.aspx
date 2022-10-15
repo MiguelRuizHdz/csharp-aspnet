@@ -24,7 +24,10 @@
         </tr>
         <tr>
             <td><asp:Label ID="lblGenero" runat="server" Text="Genero:"></asp:Label></td>
-            <td><asp:TextBox ID="txtGenero" runat="server" Width="225px"></asp:TextBox></td>
+            <td>
+                <asp:RadioButton ID="RadioButton1" Text="Masculino" GroupName="rblGenero" runat="server" />
+                <asp:RadioButton ID="RadioButton2" Text="Femenino" GroupName="rblGenero" runat="server" />
+            </td>
             <td></td>
         </tr>
         <tr>
@@ -54,7 +57,14 @@
             <td></td>
         </tr>
         <tr>
-            <td>
+            <td></td>
+            <td style="text-align: center;">
+                <asp:ImageButton ID="imbEditar" runat="server" ImageUrl="~/Imagenes/edit.png" />
+                &nbsp;&nbsp;
+                <asp:ImageButton ID="imbEliminar" runat="server" ImageUrl="~/Imagenes/delete.png" />
+                &nbsp;&nbsp;
+                <asp:ImageButton ID="imbLimpiar" runat="server" ImageUrl="~/Imagenes/clear.png" />
+                &nbsp;&nbsp;
                 <asp:ImageButton ID="imbGuardar" runat="server" ImageUrl="~/Imagenes/save.png" />
             </td>
         </tr>

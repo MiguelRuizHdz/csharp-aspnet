@@ -87,13 +87,22 @@ namespace Proyecto_clase.Presentacion
         protected global::System.Web.UI.WebControls.Label lblGenero;
 
         /// <summary>
-        /// Control txtGenero.
+        /// Control RadioButton1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtGenero;
+        protected global::System.Web.UI.WebControls.RadioButton RadioButton1;
+
+        /// <summary>
+        /// Control RadioButton2.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButton RadioButton2;
 
         /// <summary>
         /// Control lblTelefono.
@@ -184,6 +193,33 @@ namespace Proyecto_clase.Presentacion
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Calendar calFecha;
+
+        /// <summary>
+        /// Control imbEditar.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ImageButton imbEditar;
+
+        /// <summary>
+        /// Control imbEliminar.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ImageButton imbEliminar;
+
+        /// <summary>
+        /// Control imbLimpiar.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ImageButton imbLimpiar;
 
         /// <summary>
         /// Control imbGuardar.
